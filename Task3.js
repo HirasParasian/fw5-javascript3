@@ -1,6 +1,6 @@
-
+//1. 
 const tunggu = new Promise((resolve,reject)=>{
-    printSegitiga = "dua"
+    printSegitiga = 2
     setTimeout(() => {
         resolve(true)
         if (printSegitiga>=3){
