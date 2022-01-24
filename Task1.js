@@ -2,13 +2,13 @@
     return new Promise((resolve, reject) => {
       setTimeout(() => {
         const dataDay = ["senin", "selasa", "rabu", "kamis", "jumat"];
-        let cek = dataDay.find((item) => {
-          return item === day;
+        let cek = dataDay.find((item) => { //mencari item di dalam data day
+          return item === day; //return nilai
         });
-        if (cek) {
-          resolve(cek);
+        if (cek) { //cek apakah data ada
+          resolve(cek); // resolve
         } else {
-          reject("Hari ini bukan hari kerja");
+          reject("Hari ini bukan hari kerja"); //output jika reject
         }
       }, 3000);
     });

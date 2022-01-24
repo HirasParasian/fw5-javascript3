@@ -1,8 +1,7 @@
-const getmonth = (callback) => {
-    setTimeout(() => {
-      let error = false;
+const getmonth = (callback) => { //deklarasi getmont dengan parameter callback
+    setTimeout(() => { // deklarasi timer
+      let error = false; //tidak mungkin masuk ke error
       let month = ['Januari', 'Februari', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'Desember'];
-  
       if (!error) {
         callback(null, month)
       } else {
@@ -15,7 +14,7 @@ const getmonth = (callback) => {
       if (error){
           console.log(error)
       }else{
-          item.map(el=>{
+          item.map(el=>{ //menapilkan data 
               console.log(el)
           })
       }
