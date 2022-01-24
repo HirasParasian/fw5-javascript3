@@ -8,7 +8,7 @@
         if (cek) {
           resolve(cek);
         } else {
-          reject(new Error("Hari ini bukan hari kerja"));
+          reject("Hari ini bukan hari kerja");
         }
       }, 3000);
     });
